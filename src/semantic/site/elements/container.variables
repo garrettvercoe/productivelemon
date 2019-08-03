@@ -19,7 +19,7 @@
 @tabletWidth: @tabletBreakpoint - (@tabletMinimumGutter * 2) - @scrollbarWidth;
 @tabletGutter: auto;
 
-@computerMinimumGutter: (@emSize  * 1.25);
+@computerMinimumGutter: (@emSize  * 1.5);
 @computerWidth: @computerBreakpoint - (@computerMinimumGutter * 2) - @scrollbarWidth;
 @computerGutter: auto;
 

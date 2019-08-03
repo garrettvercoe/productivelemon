@@ -9,12 +9,12 @@
 @verticalAlign: baseline;
 @verticalMargin: 0em;
 @horizontalMargin: @relative2px;
-@backgroundColor: #E4E6EA;
+@backgroundColor: #e8e8ef;
 @color: @mutedTextColor;
 @backgroundImage: none;
 @verticalPadding: 0.5833em; /* medium is not @emSize custom value required */
 @horizontalPadding: 0.833em;
-@borderRadius: @absoluteBorderRadius;
+@borderRadius: 2px;
 @textTransform: none;
 @fontWeight: @bold;
 @borderWidth: 1px;
@@ -103,10 +103,10 @@
 --------------------*/
 
 /* Basic */
-@basicBackground: none @white;
+@basicBackground: none;
 @basicBorderWidth: 1px;
 @basicBorder: @basicBorderWidth solid @borderColor;
-@basicColor: @textColor;
+@basicColor: #2b384a;
 @basicBoxShadow: none;
 
 @basicHoverBackground: @basicBackground;

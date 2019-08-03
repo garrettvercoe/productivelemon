@@ -14,7 +14,7 @@
             Grid
 *******************************/
 
-@minWidth: 320px;
+@minWidth: 767px;
 
 @gutterWidth: 2rem;
 @rowSpacing: 2rem;

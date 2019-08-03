@@ -2,4 +2,4 @@
          Theme Overrides
 *******************************/
 
-@backgroundColor: slategray;
+@backgroundColor: #e8e8ef;

@@ -1,65 +1,67 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Semantic UI Starter',
+    title: 'Garrett Vercoe: Maker',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-less',
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/pages/posts`,
-        name: "post",
+        path: `${__dirname}/src/pages/taskManagement`,
+        name: 'taskManagement',
       },
-     
     },
 
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-transformer-remark',
       options: {
-        path: `${__dirname}/src/pages/projects`,
-        name: "project",
-      }},
+        plugins: [
+          'gatsby-remark-component',
+          `gatsby-remark-responsive-iframe`,
 
-
-
-    {
-      resolve: "gatsby-transformer-remark",
-      options: {
-        plugins: ["gatsby-remark-component",
-      
-        {
-          resolve: `gatsby-remark-images`,
-          options: {
-            maxWidth: 1080,
-            wrapperStyle: 'margins: 0 20px 0 20px;'
-          },
-        },
-        {
-          resolve: `gatsby-remark-responsive-iframe`,
-          options: {
-            wrapperStyle: {
-              "margin-top" : "20em",
-              "margin-bottom": "1em"
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1080,
+              wrapperStyle:
+                'margin-bottom:60px;margin-top:30px; text-decoration: none; border: 0 none; ',
+              showCaptions: true,
             },
           },
-        },
-        `gatsby-remark-copy-linked-files`,
-          {resolve: `gatsby-remark-prismjs`,
-          options: {
-            classPrefix: "language-",
-            inlineCodeMarker: null,
-            aliases: {},
-            showLineNumbers: false,
-            noInlineHighlight: false,
+
+          `gatsby-remark-copy-linked-files`,
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: 'language-',
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: false,
+              noInlineHighlight: false,
+            },
           },
-        }]
+        ],
       },
-      },
+    },
     `gatsby-plugin-catch-links`,
     `rehype-react`,
+    'gatsby-plugin-layout',
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
 
-    ],
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint:
+          'https://garrettvercoe.us7.list-manage.com/subscribe/post?u=6be53a6300589442a85d88031&amp;id=df7352000d', // see instructions section below
+      },
+    },
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: './src/assets/favicon.png',
+      },
+    },
+  ],
 }

@@ -1,11 +1,23 @@
 import React from 'react'
-import Layout from '../components/layout'
+import chart from '../assets/404-chart.svg'
+import { Grid } from 'semantic-ui-react'
+import Gleft from '../components/GLeft'
+import Gright from '../components/GRight'
 
 const NotFoundPage = () => (
-  <Layout>
-    <h1><span role="img" aria-label="Forbidden sign">🚫</span> Not found</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
+  <>
+    <Grid>
+      <Gleft> </Gleft>
+      <Gright>
+        <h3>Page not found. </h3>
+        <p>
+          This page is still being worked on or one of us has made a huge
+          mistake.
+        </p>
+        <img src={chart} alt="404 chart" style={{ width: '60%' }} />
+      </Gright>
+    </Grid>
+  </>
 )
 
 export default NotFoundPage
