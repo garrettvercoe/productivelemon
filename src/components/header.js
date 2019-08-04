@@ -58,7 +58,7 @@ const Header = ({ siteTitle }) => (
           in life.{' '}
         </h3>
         <ul class="menu-list">
-          <ListLink to="">All</ListLink>
+          <ListLink to="/">All</ListLink>
           <ListLink to="/taskmanagement/"> Task Management</ListLink>
           <ListLink to="/notemanagement/"> Note Management</ListLink>
           <ListLink to="/reading/">Reading</ListLink>
