@@ -46,8 +46,8 @@ export default class Newsletter extends React.Component {
     return (
       <Form onSubmit={this._handleSubmit}>
         <p>
-          Join my newsletter to learn of interesting tech product releases and
-          posts. Unsubscribe at any time. 🔥
+          Join the ProductiveLemon newsletter to get productivity resources
+          delivered straight to your inbox. 🔥
         </p>
         <Form.Group>
           <Form.Field
@@ -61,7 +61,7 @@ export default class Newsletter extends React.Component {
             onSubmit={this._handleSubmit}
           />
           <Form.Field control={Button} basic type="submit" size="tiny">
-            Sign up
+            Sign me up
           </Form.Field>
         </Form.Group>
         <div

@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { Container, Icon } from 'semantic-ui-react'
 import Logo from '../assets/Logo.png'
+import './styles.css'
+
 const ListLink = props => (
   <li class="item-list">
     <Link to={props.to} class="menuItem" activeClassName="menuItemActive">
@@ -42,11 +44,20 @@ const Header = ({ siteTitle }) => (
       </Link>
       <div style={{ margin: ' 2rem 0 2rem 0' }}>
         {' '}
-        <h1>Level Up Your Productivity</h1>
+        <h1>
+          Level Up Your Productivity{' '}
+          <span style={{ paddingLeft: '5px' }}>🚀</span>
+        </h1>
         <h3 style={{ color: '#717171', marginRight: '6rem', fontWeight: 400 }}>
           A curation of tools, tips, and tricks for maximizing your productivity
           in life.{' '}
         </h3>
+        <ul class="menu-list">
+          <ListLink to="/">All</ListLink>
+          <ListLink to="/taskmanagement/"> Task Management</ListLink>
+          <ListLink to="/notemanagement/"> Note Management</ListLink>
+          <ListLink to="/reading/">Reading</ListLink>
+        </ul>
       </div>
     </div>
   </header>

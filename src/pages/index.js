@@ -1,25 +1,18 @@
 import React from 'react'
 import { Button, input, Grid, Form, Divider } from 'semantic-ui-react'
 
-import ProjectGrid from './taskmanagement'
+import TaskManagement from './taskmanagement'
 import TitleSection from '../components/titleSection'
 import Reading from './reading'
 import NoteManagement from './notemanagement'
-
+import '../components/styles.css'
 const IndexPage = () => (
   <>
-    <Divider section hidden />
+    <div class="breaker" />
     <NoteManagement />
+    <TaskManagement />
     <Reading />
 
-    <TitleSection>Visitor Favorites</TitleSection>
-    <TitleSection>Strategies</TitleSection>
-
-    <TitleSection>Habit Building</TitleSection>
-    <TitleSection>Block Out Distractions</TitleSection>
-    <Divider section hidden />
-    <TitleSection>Task Management</TitleSection>
-    <ProjectGrid />
     <Divider section hidden />
   </>
 )
