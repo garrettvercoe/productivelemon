@@ -10,7 +10,7 @@ const ListLink = props => (
       to={props.to}
       class="menuItem"
       activeClassName="menuItemActive"
-      partiallyActive={true}
+      exact={true}
     >
       {props.children}
     </Link>
