@@ -10,7 +10,7 @@
     "gatsby-plugin-favicon": "^3.1.5",
     "gatsby-plugin-layout": "^1.0.11",
     "gatsby-plugin-less": "^2.0.0-beta.5",
-    "gatsby-plugin-mailchimp": "^4.0.0",
+    "gatsby-plugin-mailchimp": "^5.1.2",
     "gatsby-plugin-react-helmet": "next",
     "gatsby-plugin-sharp": "^2.2.9",
     "gatsby-remark-component": "^1.1.3",
