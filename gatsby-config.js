@@ -20,6 +20,8 @@ module.exports = {
         plugins: [
           'gatsby-remark-component',
           `gatsby-remark-responsive-iframe`,
+          `gatsby-transformer-sharp`,
+          `gatsby-plugin-sharp`,
 
           {
             resolve: `gatsby-remark-images`,
@@ -48,7 +50,6 @@ module.exports = {
     `gatsby-plugin-catch-links`,
     `rehype-react`,
     'gatsby-plugin-layout',
-    `gatsby-transformer-sharp`,
 
     {
       resolve: 'gatsby-plugin-mailchimp',
