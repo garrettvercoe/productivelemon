@@ -1,9 +1,10 @@
 {
-  "name": "garrett-vercoe-portfolio",
-  "description": "Garrett Vercoe: Maker",
+  "name": "productive-lemon",
+  "description": "Productive Lemon",
   "version": "1.0.0",
   "author": "Garrett Vercoe <hello@garrettvercoe.com>",
   "dependencies": {
+    "file-loader": "^4.1.0",
     "gatsby": "^2.0.77",
     "gatsby-image": "^2.0.25",
     "gatsby-plugin-catch-links": "^2.0.8",
