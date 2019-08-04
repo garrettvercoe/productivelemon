@@ -16,7 +16,7 @@ const Header = ({ siteTitle }) => (
   <header
     style={{
       background: `#fff`,
-      marginBottom: `1.45rem`,
+      marginBottom: `1rem`,
 
       boxShadow: '0px 1px 5px rgba(0, 0, 0, 0.16)',
     }}
@@ -25,7 +25,7 @@ const Header = ({ siteTitle }) => (
       style={{
         margin: `0 auto`,
         maxWidth: 1080,
-        padding: `1.45rem 1.0875rem`,
+        padding: `0.5rem 1.0875rem`,
       }}
     >
       <Link
