@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import { Grid, Divider, Label } from 'semantic-ui-react'
 import Img from 'gatsby-image'
 import './gridBlocks.css'
-import TitleSection from '../components/TitleSection'
+import TitleSection from '../components/titleSection'
 export default props => (
   <StaticQuery
     query={graphql`
