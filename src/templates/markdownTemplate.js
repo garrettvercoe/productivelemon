@@ -5,9 +5,6 @@ import { Grid } from 'semantic-ui-react'
 import Img from 'gatsby-image'
 import { Link } from 'gatsby'
 import './markdown.css'
-import Gleft from '../components/GLeft'
-import Gright from '../components/GRight'
-import Gthird from '../components/Gthird'
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,

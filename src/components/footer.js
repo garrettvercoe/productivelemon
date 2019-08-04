@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import Newsletter from './newsletter'
-import './Footer.css'
+import './footer.css'
 import { Button, Input, Grid, Form } from 'semantic-ui-react'
 
 const ALink = props => (
