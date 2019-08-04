@@ -4,7 +4,7 @@ import { Button, input, Grid, Form, Divider } from 'semantic-ui-react'
 import ProjectGrid from './taskmanagement'
 import TitleSection from '../components/titleSection'
 import Reading from './reading'
-import NoteManagement from './noteManagement'
+import NoteManagement from './notemanagement'
 
 const IndexPage = () => (
   <>
