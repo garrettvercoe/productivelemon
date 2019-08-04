@@ -1,17 +1,17 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Container, Icon } from 'semantic-ui-react'
 import Logo from '../assets/Logo.png'
 import './styles.css'
 
+// activeClassName="menuItemActive"
+// exact={true}
+
+const isActive = ({ isCurrent }) => {
+  return isCurrent ? { className: 'menuItemActive' } : null
+}
 const ListLink = props => (
   <li class="item-list">
-    <Link
-      to={props.to}
-      class="menuItem"
-      activeClassName="menuItemActive"
-      exact={true}
-    >
+    <Link to={props.to} getProps={isActive} class="menuItem">
       {props.children}
     </Link>
   </li>
