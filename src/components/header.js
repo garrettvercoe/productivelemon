@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import Logo from '../assets/Logo.png'
 import './styles.css'
 
@@ -7,11 +7,12 @@ import './styles.css'
 // exact={true}
 
 const isActive = ({ isCurrent }) => {
-  return isCurrent ? { className: 'menuItemActive' } : null
+  return isCurrent ? { className: 'menuItemActive' } : { className: 'menuItem' }
 }
+
 const ListLink = props => (
   <li class="item-list">
-    <Link to={props.to} getProps={isActive} class="menuItem">
+    <Link exact to={props.to} getProps={isActive}>
       {props.children}
     </Link>
   </li>
