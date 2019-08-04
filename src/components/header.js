@@ -37,12 +37,12 @@ const Header = ({ siteTitle }) => (
           src={Logo}
           alt="Garrett Vercoe"
           class="logo"
-          style={{ height: '50px' }}
+          style={{ height: '40px' }}
         />
       </Link>
       <div style={{ margin: ' 2rem 0 2rem 0' }}>
         {' '}
-        <h1>Level Up Your Productivity.</h1>
+        <h1>Level Up Your Productivity</h1>
         <h3 style={{ color: '#717171', marginRight: '6rem', fontWeight: 400 }}>
           A curation of tools, tips, and tricks for maximizing your productivity
           in life.{' '}

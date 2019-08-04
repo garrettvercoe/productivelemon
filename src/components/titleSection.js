@@ -7,7 +7,7 @@ export default ({ children }) => (
       <h2> {children}</h2>
       <Link
         className="fl-r border-yellow border-b  up mb-text mb-2"
-        to="/page-2/"
+        to={'/' + children.replace(/\s/g, '').toLowerCase() + '/'}
       >
         View All
       </Link>

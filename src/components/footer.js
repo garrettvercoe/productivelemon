@@ -24,25 +24,8 @@ class Footer extends Component {
               <Newsletter />
             </Grid.Column>
           </Grid>
-          <ul style={{ listStyle: `none`, float: `left`, paddingLeft: '0rem' }}>
-            Made from scratch with love. 💛{' '}
-            <a href="/portfolio" class="bodyLink">
-              Find out how
-            </a>{' '}
-            <br />
-            <ALink to="https://www.google.com">Copyright 2018</ALink>
-            <ALink to="https://www.linkedin.com/in/garrett-vercoe/">
-              LinkedIn{' '}
-            </ALink>
-            <ALink to="https://github.com/garrettvercoe"> Github </ALink>
-            <ALink to="https://www.dropbox.com/s/q27z4mc6pl0of8t/VercoeGarrett.pdf?dl=0">
-              {' '}
-              Resume
-            </ALink>
-            <ALink to="https://www.instagram.com/garrettvercoe/">
-              Instagram
-            </ALink>
-          </ul>
+          Made from scratch with love by{' '}
+          <a href="https://garrettvercoe.com/"> Garrett Vercoe</a>. 💛{' '}
         </footer>
       </>
     )

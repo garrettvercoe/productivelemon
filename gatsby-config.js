@@ -9,8 +9,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/pages/taskManagement`,
-        name: 'taskManagement',
+        path: `/${__dirname}/src/sources/`,
+        name: 'all',
       },
     },
 

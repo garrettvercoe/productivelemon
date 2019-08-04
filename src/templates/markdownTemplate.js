@@ -16,7 +16,7 @@ const renderAst = new rehypeReact({
 
 export default function Template({ data }) {
   const project = data.markdownRemark
-  const folderRegex = /(pages\/)(.+)\/(.*\/)/
+  const folderRegex = /(sources\/)(.+)\/(.*\/)/
   const toMatch = project.fileAbsolutePath
   const section = folderRegex.exec(toMatch)
   return (
@@ -30,9 +30,9 @@ export default function Template({ data }) {
                 <p class="markdown-label">Date</p>
                 <p class="markdown-info-text">{project.frontmatter.date}</p>
                 {/* <p class="markdown-label">{project.frontmatter.label}</p> */}
-                {project.frontmatter.list.map(elem => (
+                {/* {project.frontmatter.list.map(elem => (
                   <div class="markdown-info-text">{elem}</div>
-                ))}
+                ))} */}
               </div>
             </Grid.Column>
             <Grid.Column mobile={12} tablet={9} computer={9}>
