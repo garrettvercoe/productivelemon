@@ -10,11 +10,11 @@ import 'semantic-ui-less/semantic.less'
 import { Link } from 'gatsby'
 import Transition from '../components/animation'
 
-const LinkedItem = ({ children, ...props }) => (
-  <Menu.Item as={Link} activeClassName="active" {...props}>
-    {children}
-  </Menu.Item>
-)
+// const LinkedItem = ({ children, ...props }) => (
+//   <Menu.Item as={Link} activeClassName="active" {...props}>
+//     {children}
+//   </Menu.Item>
+// )
 require('../components/codeBlock.css')
 require('prismjs/plugins/line-numbers/prism-line-numbers.css')
 

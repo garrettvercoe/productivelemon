@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import { StaticQuery, graphql } from 'gatsby'
 import { Grid, Divider, Label } from 'semantic-ui-react'
 import Img from 'gatsby-image'
