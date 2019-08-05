@@ -51,8 +51,8 @@ const Header = ({ siteTitle }) => (
       <div style={{ margin: ' 2rem 0 2rem 0' }}>
         {' '}
         <h1>
-          Level Up Your Productivity{' '}
-          <span style={{ paddingLeft: '5px' }}>🚀</span>
+          Turn Lemons into Lemonade{' '}
+          <span style={{ paddingLeft: '5px' }}>🍋</span>
         </h1>
         <h3 style={{ color: '#717171', marginRight: '6rem', fontWeight: 400 }}>
           A curation of tools, tips, and tricks for maximizing your productivity
