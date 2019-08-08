@@ -50,6 +50,8 @@ const TaskManagement = ({ data }) => {
         padding: `1.45rem 1.0875rem`,
       }}
     >
+      {' '}
+      <Divider section hidden />
       <TitleSection>Task Management</TitleSection>
       <Grid>
         {taskManagement
@@ -80,7 +82,6 @@ const TaskManagement = ({ data }) => {
             )
           })}
       </Grid>
-      <Divider section hidden />
     </div>
   )
 }

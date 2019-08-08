@@ -51,6 +51,7 @@ const NoteManagement = ({ data }) => {
         padding: `1.45rem 1.0875rem`,
       }}
     >
+      <Divider section hidden />
       <TitleSection>Note Management</TitleSection>
       <Grid>
         {noteManagement
@@ -81,7 +82,6 @@ const NoteManagement = ({ data }) => {
             )
           })}
       </Grid>
-      <Divider section hidden />
     </div>
   )
 }

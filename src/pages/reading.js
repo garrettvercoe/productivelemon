@@ -51,6 +51,7 @@ const OnlineReading = ({ data }) => {
         padding: `1.45rem 1.0875rem`,
       }}
     >
+      <Divider section hidden />
       <TitleSection>Reading</TitleSection>
       <Grid>
         {onlineReading
@@ -81,7 +82,6 @@ const OnlineReading = ({ data }) => {
             )
           })}
       </Grid>
-      <Divider section hidden />
     </div>
   )
 }

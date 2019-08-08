@@ -9,7 +9,8 @@ export default ({ children }) => (
         className="fl-r border-yellow border-b  up mb-text mb-2"
         to={'/' + children.replace(/\s/g, '').toLowerCase() + '/'}
       >
-        View All
+        {' '}
+        {/* View All */}
       </Link>
     </div>
   </React.Fragment>

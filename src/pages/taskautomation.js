@@ -8,10 +8,10 @@ import TitleSection from '../components/titleSection'
 export default props => (
   <StaticQuery
     query={graphql`
-      query HabitGridQuery {
+      query AutomationGridQuery {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { fileAbsolutePath: { regex: "/(habittracking)/.*.md$/" } }
+          filter: { fileAbsolutePath: { regex: "/(taskAutomation)/.*.md$/" } }
         ) {
           edges {
             node {
@@ -36,12 +36,12 @@ export default props => (
         }
       }
     `}
-    render={data => <HabitTracking data={data} {...props} />}
+    render={data => <TaskAutomation data={data} {...props} />}
   />
 )
 
-const HabitTracking = ({ data }) => {
-  const { edges: habitTracking } = data.allMarkdownRemark
+const TaskAutomation = ({ data }) => {
+  const { edges: taskAutomation } = data.allMarkdownRemark
   return (
     <div
       style={{
@@ -50,10 +50,11 @@ const HabitTracking = ({ data }) => {
         padding: `1.45rem 1.0875rem`,
       }}
     >
+      {' '}
       <Divider section hidden />
-      <TitleSection>Habit Tracking</TitleSection>
+      <TitleSection>Task Automation</TitleSection>
       <Grid>
-        {habitTracking
+        {taskAutomation
           .filter(item => item.node.frontmatter.title.length > 0)
           .map(({ node: item }) => {
             return (
