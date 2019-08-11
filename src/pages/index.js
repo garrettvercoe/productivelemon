@@ -16,5 +16,5 @@ const IndexPage = () => (
     <Divider section hidden />
   </>
 )
-
+//
 export default IndexPage
