@@ -8,7 +8,7 @@ import TitleSection from '../components/titleSection'
 export default props => (
   <StaticQuery
     query={graphql`
-      query ProjectGridQuery {
+      query TaskGridQuery {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
           filter: { fileAbsolutePath: { regex: "/(taskManagement)/.*.md$/" } }
