@@ -60,7 +60,7 @@ const Header = ({ siteTitle }) => (
           <ListLink to="/taskmanagement/"> Task Management</ListLink>
           <ListLink to="/notemanagement/"> Note Management</ListLink>
           <ListLink to="/reading/">Reading</ListLink>
-          <ListLink to="/habittracking/">Habit Tracking</ListLink>
+          <ListLink to="/habitTracking/">Habit Tracking</ListLink>
           <ListLink to="/taskautomation/">Task Automation</ListLink>
         </ul>
       </div>

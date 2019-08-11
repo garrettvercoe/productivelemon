@@ -3,7 +3,7 @@ import { Divider } from 'semantic-ui-react'
 import TaskManagement from './taskmanagement'
 import Reading from './reading'
 import NoteManagement from './notemanagement'
-import HabitTracking from './habittracking'
+import HabitTracking from './habitTracking'
 import TaskAutomation from './taskautomation'
 import '../components/styles.css'
 const IndexPage = () => (
