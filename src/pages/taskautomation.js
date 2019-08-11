@@ -1,10 +1,8 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import { StaticQuery, graphql } from 'gatsby'
 import { Grid, Divider, Label } from 'semantic-ui-react'
 import Img from 'gatsby-image'
 import './gridBlocks.css'
-import { graphql } from 'gatsby'
 import TitleSection from '../components/titleSection'
 export default props => (
   <StaticQuery

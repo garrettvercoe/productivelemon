@@ -3,12 +3,11 @@ import { StaticQuery, graphql } from 'gatsby'
 import { Grid, Divider, Label } from 'semantic-ui-react'
 import Img from 'gatsby-image'
 import './gridBlocks.css'
-import { graphql } from 'gatsby'
 import TitleSection from '../components/titleSection'
 export default props => (
   <StaticQuery
     query={graphql`
-      query HabitTracking {
+      query HabitTrackingQuery {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
           filter: { fileAbsolutePath: { regex: "/(habitTracking)/.*.md$/" } }
