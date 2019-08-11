@@ -4,6 +4,7 @@ import rehypeReact from 'rehype-react'
 import { Grid } from 'semantic-ui-react'
 import Img from 'gatsby-image'
 import { Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import './markdown.css'
 
 const renderAst = new rehypeReact({

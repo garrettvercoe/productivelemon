@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import { StaticQuery, graphql } from 'gatsby'
 import { Grid, Divider, Label } from 'semantic-ui-react'
 import Img from 'gatsby-image'
+import { graphql } from 'gatsby'
 import TitleSection from '../components/titleSection'
 import './gridBlocks.css'
 
