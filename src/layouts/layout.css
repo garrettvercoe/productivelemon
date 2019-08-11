@@ -12,6 +12,12 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
+@media only screen and (max-width: 768px) {
+  .header {
+    line-height: 1.25;
+  }
+}
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;

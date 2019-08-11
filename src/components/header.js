@@ -50,7 +50,7 @@ const Header = ({ siteTitle }) => (
       </Link>
       <div style={{ margin: ' 2rem 0 2rem 0' }}>
         {' '}
-        <h1>
+        <h1 class="header">
           Turn Lemons into Lemonade{' '}
           <span style={{ paddingLeft: '5px' }}>🍋</span>
         </h1>
