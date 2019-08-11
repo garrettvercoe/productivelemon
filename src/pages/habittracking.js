@@ -7,7 +7,7 @@ import TitleSection from '../components/titleSection'
 export default props => (
   <StaticQuery
     query={graphql`
-      query HabitTrackingQuery {
+      query HabitGridQuery {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
           filter: { fileAbsolutePath: { regex: "/(habitTracking)/.*.md$/" } }
