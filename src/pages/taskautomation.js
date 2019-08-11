@@ -70,11 +70,6 @@ const TaskAutomation = ({ data }) => {
                     <div className="card-content-box">
                       <h4> {item.frontmatter.title}</h4>
                       <p class="desc">{item.frontmatter.subtitle}</p>
-                      {/* {item.frontmatter.tags.map(elem => (
-                        <div class="tag-outer">
-                          <div class="tag">{elem}</div>
-                        </div>
-                      ))} */}
                     </div>
                   </a>
                 </div>
