@@ -3,9 +3,6 @@ import { Link } from 'gatsby'
 import Logo from '../assets/Logo.png'
 import './styles.css'
 
-// activeClassName="menuItemActive"
-// exact={true}
-
 const isActive = ({ isCurrent }) => {
   return isCurrent ? { className: 'menuItemActive' } : { className: 'menuItem' }
 }
