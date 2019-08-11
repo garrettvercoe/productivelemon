@@ -8,10 +8,10 @@ import TitleSection from '../components/titleSection'
 export default props => (
   <StaticQuery
     query={graphql`
-      query HabitGridQuery {
+      query HabGridQuery {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { fileAbsolutePath: { regex: "/(habittracking)/.*.md$/" } }
+          filter: { fileAbsolutePath: { regex: "/(habitTracking)/.*.md$/" } }
         ) {
           edges {
             node {
